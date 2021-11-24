@@ -82,8 +82,8 @@ class PluginBrowser(Screen, ProtectedScreen):
 		})
 		self["PluginDownloadActions"] = ActionMap(["ColorActions"],
 		{
-			"red": self.delete,
-			"green": self.download
+			"": self.delete,
+			"": self.download
 		})
 		self["DirectionActions"] = ActionMap(["DirectionActions"],
 		{
