@@ -17,19 +17,16 @@ class Language:
 		self.langlist = []
 		# FIXME make list dynamically
 		# name, iso-639 language, iso-3166 country. Please don't mix language&country!
-		self.addLanguage("عربي", "ar", "AE", "UTF-8")
-		self.addLanguage("Български", "bg", "BG", "ISO-8859-15")
-		self.addLanguage("Català", "ca", "AD", "ISO-8859-15")
-		self.addLanguage("Česky", "cs", "CZ", "ISO-8859-15")
-		self.addLanguage("Dansk", "da", "DK", "ISO-8859-15")
-		self.addLanguage("Deutsch", "de", "DE", "ISO-8859-15")
+		self.addLanguage("English", "en", "EN", "ISO-8859-15")
+                self.addLanguage("Italiano", "it", "IT", "ISO-8859-15")
+                self.addLanguage("Deutsch", "de", "DE", "ISO-8859-15")
+                self.addLanguage("Français", "fr", "FR", "ISO-8859-15")
 		self.addLanguage("Ελληνικά", "el", "GR", "ISO-8859-7")
 		self.addLanguage("English", "en", "EN", "ISO-8859-15")
 		self.addLanguage("Español", "es", "ES", "ISO-8859-15")
 		self.addLanguage("Eesti", "et", "EE", "ISO-8859-15")
 		self.addLanguage("فارسی", "fa", "IR", "UTF-8")
 		self.addLanguage("Suomi", "fi", "FI", "ISO-8859-15")
-		self.addLanguage("Français", "fr", "FR", "ISO-8859-15")
 		self.addLanguage("Frysk", "fy", "NL", "ISO-8859-15")
 		self.addLanguage("Galician", "gl", "ES", "ISO-8859-15")
 		self.addLanguage("Hebrew", "he", "IL", "ISO-8859-15")
@@ -37,7 +34,6 @@ class Language:
 		self.addLanguage("Magyar", "hu", "HU", "ISO-8859-15")
 		self.addLanguage("Indonesian", "id", "ID", "ISO-8859-15")
 		self.addLanguage("Íslenska", "is", "IS", "ISO-8859-15")
-		self.addLanguage("Italiano", "it", "IT", "ISO-8859-15")
 		self.addLanguage("Kurdish", "ku", "KU", "ISO-8859-15")
 		self.addLanguage("Lietuvių", "lt", "LT", "ISO-8859-15")
 		self.addLanguage("Latviešu", "lv", "LV", "ISO-8859-15")
@@ -77,7 +73,7 @@ class Language:
 				index = "en_EN"
 			lang = self.lang[index]
 			print "Activating language " + lang[0]
-			os.environ["LANGUAGE"] = lang[1] # set languange in order gettext to work properly on external plugins
+			self.addLanguage("Arabic", "ar", "AE", "ISO-8859-15")os.environ["LANGUAGE"] = lang[1] # set languange in order gettext to work properly on external plugins
 			self.catalog = gettext.translation('enigma2', resolveFilename(SCOPE_LANGUAGE, ""), languages=[index])
 			self.catalog.install(names=("ngettext", "pgettext"))
 			self.activeLanguage = index
