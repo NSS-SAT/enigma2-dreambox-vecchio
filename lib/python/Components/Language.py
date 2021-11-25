@@ -18,10 +18,10 @@ class Language:
 		# FIXME make list dynamically
 		# name, iso-639 language, iso-3166 country. Please don't mix language&country!
 		self.addLanguage("English", "en", "EN", "ISO-8859-15")
-        self.addLanguage("Italiano", "it", "IT", "ISO-8859-15")
-        self.addLanguage("Français", "fr", "FR", "ISO-8859-15")
-        self.addLanguage("Deutsch", "de", "DE", "ISO-8859-15")
-        self.addLanguage("عربي", "ar", "AE", "UTF-8")
+                self.addLanguage("Italiano", "it", "IT", "ISO-8859-15")
+                self.addLanguage("Français", "fr", "FR", "ISO-8859-15")
+                self.addLanguage("Deutsch", "de", "DE", "ISO-8859-15")
+                self.addLanguage("عربي", "ar", "AE", "UTF-8")
 		self.addLanguage("Български", "bg", "BG", "ISO-8859-15")
 		self.addLanguage("Català", "ca", "AD", "ISO-8859-15")
 		self.addLanguage("Česky", "cs", "CZ", "ISO-8859-15")
