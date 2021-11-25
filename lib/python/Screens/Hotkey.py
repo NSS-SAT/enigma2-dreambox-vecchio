@@ -19,8 +19,8 @@ import os
 
 class hotkey:
 	functions = None
-	hotkeys = [(_("Red") + " " + _("long"), "Module/Screens.About/MemoryInfo", ""),
-		(_("Green") + " " + _("long"), "Module/Screens.PluginBrowser/PluginBrowser", ""),
+	hotkeys = [(_("Red") + " " + _("long"), "Module/Screens.About/MemoryInfo"),
+		(_("Green") + " " + _("long"), "green_long", "Module/Screens.PluginBrowser/PluginBrowser"),
 		(_("Yellow") + " " + _("long"), "yellow_long", "Plugins/Extensions/GraphMultiEPG/1"),
 		(_("Blue") + " " + _("long"), "blue_long", "Plugins/Extensions/NssPanel/1"),
 		("F1/LAN", "f1", ""),
@@ -30,7 +30,7 @@ class hotkey:
 		("F3", "f3", ""),
 		("F3" + " " + _("long"), "f3_long", ""),
 		(_("Red"), "red", "Module/Screens.About/MemoryInfo"),
-		(_("Green"), "green", "Module/Screens.PluginBrowser/PluginBrowser"),
+		(_("Green"), "Module/Screens.PluginBrowser/PluginBrowser"),
 		(_("Yellow"), "yellow", ""),
 		(_("Blue"), "blue", "Plugins/Extensions/NssPanel/1"),
 		("Rec", "rec", ""),
