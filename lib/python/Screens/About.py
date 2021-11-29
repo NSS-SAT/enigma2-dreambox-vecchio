@@ -59,7 +59,6 @@ class About(Screen):
 
 		ffmpegVersion = _("Media player: ffmpeg, version ") + about.getffmpegVersionString()
 		self["ffmpegVersion"] = StaticText(ffmpegVersion)
-		AboutText += _("FFmpeg version: ") + about.getffmpegVersionString() + "\n"
 
 		if cpu.upper().startswith('HI') or os.path.isdir('/proc/hisi'):
 			AboutText += ffmpegVersion + "\n"
