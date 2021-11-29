@@ -3813,9 +3813,9 @@ msgstr "RGB"
 msgid "GUI Settings"
 msgstr "Impostazioni"
 
- fuzzy
+#, fuzzy
 msgid "GUI Skin"
-msgstr "Impostazioni Skin"
+msgstr "Impostazioni"
 
 msgid ""
 "GUI needs a restart to apply a new language\n"
@@ -9549,7 +9549,7 @@ msgid "Tuner type"
 msgstr "Tipo di sintonizzatore"
 
 msgid "Tuners & scanning"
-msgstr "Impostazione Ricerca"
+msgstr "Tuner e scansione"
 
 msgid "Tunisia"
 msgstr "Tunisia"
