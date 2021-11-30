@@ -35,7 +35,7 @@ class About(Screen):
 		AboutText += _("CPU: ") + cpu + "\n"
 		AboutText += _("Image: ") + about.getImageTypeString() + "\n"
 		AboutText += _("Info: www.nonsolosat.net") + "\n"
-
+        
 		# [WanWizard] Removed until we find a reliable way to determine the installation date
 		# AboutText += _("Installed: ") + about.getFlashDateString() + "\n"
 
@@ -61,10 +61,10 @@ class About(Screen):
 		#self["ffmpegVersion"] = StaticText(ffmpegVersion)
 		AboutText += _("FFmpeg version: ") + about.getffmpegVersionString() + "\n"
 
-		if cpu.upper().startswith('HI') or os.path.isdir('/proc/hisi'):
-			AboutText += ffmpegVersion + "\n"
-		else:
-			AboutText += GStreamerVersion + "\n"
+		#if cpu.upper().startswith('HI') or os.path.isdir('/proc/hisi'):
+		#	AboutText += ffmpegVersion + "\n"
+		#else:
+		#	AboutText += GStreamerVersion + "\n"
 
 		AboutText += _("OpenSSL version: ") + about.getOpenSSLVersion() + "\n"
 
